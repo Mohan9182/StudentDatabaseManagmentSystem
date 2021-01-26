@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="600" maxWidth="800" minHeight="600" minWidth="800" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Login">
+      <children>
+          <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="#ededed00" strokeMiterLimit="0.0" strokeType="INSIDE" width="275.0">
+              <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.8221153846153846" startY="0.5096153846153845">
+                      <stops>
+                          <Stop>
+                              <color>
+                                  <Color red="0.03673245757818222" green="0.4873172640800476" blue="0.8815789222717285" />
+                              </color>
+                          </Stop>
+                          <Stop offset="1.0">
+                              <color>
+                                  <Color green="0.7565789222717285" blue="0.9868420958518982" opacity="0.0" />
+                              </color>
+                          </Stop>
+                      </stops>
+                  </LinearGradient>
+              </fill>
+          </Rectangle>
+      <Label fx:id="status" layoutX="349.0" layoutY="357.0" prefHeight="18.0" prefWidth="337.0" textAlignment="CENTER" />
+      <JFXButton fx:id="signin" buttonType="RAISED" layoutX="471.0" layoutY="388.0" onAction="#Login" prefHeight="35.0" prefWidth="93.0" ripplerFill="#0c95eb" style="-fx-background-color: #0c95eb; -fx-background-radius: 15px;" text="Signin" textFill="WHITE">
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </JFXButton>
+      <JFXTextField fx:id="user" layoutX="344.0" layoutY="155.0" prefHeight="28.0" prefWidth="347.0" promptText="User" unFocusColor="#5e5a5a" />
+      <JFXTextField fx:id="pass" layoutX="349.0" layoutY="231.0" prefHeight="28.0" prefWidth="337.0" promptText="Password" />
+      <JFXTextField fx:id="database" layoutX="349.0" layoutY="307.0" prefHeight="28.0" prefWidth="337.0" promptText="Database" />
+      </children>
+   <padding>
+      <Insets right="20.0" />
+   </padding>
+  </Pane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="739.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Dashbord">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="555.0" layoutY="40.0" onAction="#goToInsertPage" prefHeight="40.0" prefWidth="79.0" ripplerFill="#0999f8" style="-fx-background-radius: 15px; -fx-background-color: #0999f8;" text="Add User" textAlignment="CENTER" textFill="WHITE" />
+      <JFXTextField fx:id="regno" layoutX="226.0" layoutY="43.0" prefHeight="26.0" prefWidth="215.0" promptText="Regno" unFocusColor="#434242" />
+      <JFXButton buttonType="RAISED" layoutX="462.0" layoutY="40.0" onAction="#GetUpdateData" prefHeight="40.0" prefWidth="79.0" ripplerFill="#0999f8" style="-fx-background-radius: 15px; -fx-background-color: #0999f8;" text="Search" textFill="WHITE" />
+      <Separator layoutX="4.0" layoutY="129.0" prefHeight="3.0" prefWidth="788.0" />
+      <JFXComboBox fx:id="gender" layoutX="112.0" layoutY="330.0" prefHeight="28.0" prefWidth="152.0" promptText="Gender" />
+      <JFXTextField fx:id="name" layoutX="112.0" layoutY="185.0" promptText="Name" unFocusColor="#434242" />
+      <JFXComboBox fx:id="branch" layoutX="112.0" layoutY="490.0" prefHeight="28.0" prefWidth="152.0" promptText="Branch" />
+      <JFXComboBox fx:id="dept" layoutX="498.0" layoutY="184.0" prefHeight="28.0" prefWidth="152.0" promptText="Department" />
+      <JFXTextField fx:id="address" layoutX="498.0" layoutY="304.0" promptText="Address" unFocusColor="#424242" />
+      <JFXTextField fx:id="marks1" layoutX="501.0" layoutY="427.0" prefHeight="26.0" prefWidth="152.0" promptText="10th Marks" unFocusColor="#4d4d4d" />
+      <JFXTextField fx:id="marks2" layoutX="501.0" layoutY="556.0" promptText="12th Marks" unFocusColor="#4d4d4d" />
+      <JFXButton buttonType="RAISED" layoutX="357.0" layoutY="652.0" onAction="#updateData" prefHeight="40.0" prefWidth="79.0" ripplerFill="#0999f8" style="-fx-background-radius: 15px; -fx-background-color: #0999f8;" text="Update" textFill="WHITE" />
+      <Label fx:id="updateStatus" layoutX="188.0" layoutY="663.0" />
+   </children>
+</Pane>
